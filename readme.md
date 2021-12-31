@@ -12,7 +12,9 @@ Examples for [Kotlin](https://kotlinlang.org/).
 
 ### Visual Studio Code
 
-...
+- Open the Kotlin examples in Visual Studio Code
+- In VSCode, open a script file in the root of the example folder (where app.kts is located)
+- Use the build command. As a result the script file will be build and executed
 
 ## Docs
 
