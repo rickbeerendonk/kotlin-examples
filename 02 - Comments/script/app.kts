@@ -10,12 +10,14 @@ println("1")
 Multi
 line
 */
-println("2")
 
+println("2")
 
 /*
 Multi
+    // Nested
     /* Nested */
 line
 */
+
 println("3")
