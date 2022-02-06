@@ -10,8 +10,9 @@
         "reevaluateOnRerun": true
       },
       "type": "shell",
-      "command": "${workspaceFolder}${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc",
-      "args": ["-script", "\"${file}\""],
+      //"command": "${workspaceFolder}${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc",
+      "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\"",
+      //"args": ["-script", "\"${file}\""],
       "group": {
         "kind": "build",
         "isDefault": true
