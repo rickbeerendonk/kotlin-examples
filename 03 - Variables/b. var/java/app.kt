@@ -13,4 +13,6 @@ fun main() {
 
     // No error (as opposed to val)
     explicit = implicit;
+
+    println(explicit) // 456
 }

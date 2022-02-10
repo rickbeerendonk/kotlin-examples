@@ -12,3 +12,5 @@ println(implicit::class.simpleName) // Int
 
 // No error (as opposed to val)
 explicit = implicit;
+
+println(explicit) // 456
