@@ -1,15 +1,19 @@
 #! /bin/bash
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-filename=$1
+FILE=$1
 
 clear
 
-if [[ $filename == *.kts ]]; then
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc" "-script" "$filename"
-elif [[ $filename == *.kt ]]; then
+if [[ $FILE == *.kts ]]; then
+    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc" "-script" "$FILE"
+elif [[ $FILE == *.kt ]]; then
     echo Compile...
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" "$filename" "-include-runtime" "-d" "temp/app.jar"
-    clear
-    java -jar temp/app.jar
+    COMPILED_FILE=temp/app.jar
+    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" "$FILE" "-include-runtime" "-d" "$COMPILED_FILE"
+    if [[ -f "$COMPILED_FILE" ]]; then
+        clear
+        java -jar $COMPILED_FILE
+        rm $COMPILED_FILE
+    fi
 fi
