@@ -2,15 +2,15 @@
 // Copyright © 2022 Rick Beerendonk
 
 // Explicit
-val a: Byte = -128  // Min
-val b: Byte = 127   // Max
+val a: Byte = Byte.MIN_VALUE  // -128
+val b: Byte = Byte.MAX_VALUE  // 127
 
-println(a::class.simpleName)    // Byte
-println(b::class.qualifiedName) // kotlin.Byte
+println(a)
+println(b)
 
-// Implicit
-val aInt = -128
-val bInt = 127
+// Explicit vs Implicit
+val c: Byte = 127
+val d = 127
 
-println(aInt::class.simpleName)    // Int
-println(bInt::class.qualifiedName) // kotlin.Int
+println(c::class.qualifiedName) // kotlin.Byte
+println(d::class.qualifiedName) // kotlin.Int
