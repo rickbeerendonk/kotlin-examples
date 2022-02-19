@@ -2,17 +2,13 @@
 // Copyright © 2022 Rick Beerendonk
 
 fun main() {
-    // Explicit
-    val a: Byte = Byte.MIN_VALUE  // -128
-    val b: Byte = Byte.MAX_VALUE  // 127
-
-    println(a)
-    println(b)
+    println(Byte.MIN_VALUE) // -128
+    println(Byte.MAX_VALUE) // 127
 
     // Explicit vs Implicit
-    val c: Byte = 127
-    val d = 127
+    val explicit: Byte = 127
+    val implicit = 127
 
-    println(c::class.qualifiedName) // kotlin.Byte
-    println(d::class.qualifiedName) // kotlin.Int
+    println(explicit::class.qualifiedName) // kotlin.Byte
+    println(implicit::class.qualifiedName) // kotlin.Int
 }
