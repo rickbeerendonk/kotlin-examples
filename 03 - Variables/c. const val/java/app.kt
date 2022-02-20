@@ -14,6 +14,9 @@ fun main() {
     println(explicit::class.simpleName) // Int
     println(implicit::class.simpleName) // Int
 
+    //error: modifier 'const' is not applicable to 'local variable'
+    //const val illegal = 789
+
     // error: val cannot be reassigned
     //explicit = implicit;
 }
