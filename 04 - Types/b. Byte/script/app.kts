@@ -6,7 +6,7 @@ println(Byte.MAX_VALUE) // 127
 
 // Explicit vs Implicit
 val explicit: Byte = 127
-val implicit = 127
+val implicit = 127        // Int
 
 println(explicit::class.qualifiedName) // kotlin.Byte
 println(implicit::class.qualifiedName) // kotlin.Int

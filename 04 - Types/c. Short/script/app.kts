@@ -6,7 +6,7 @@ println(Short.MAX_VALUE)  // 32767
 
 // Explicit vs Implicit
 val explicit: Short = 32767
-val implicit = 32767
+val implicit = 32767         // Int
 
 println(explicit::class.qualifiedName) // kotlin.Short
 println(implicit::class.qualifiedName) // kotlin.Int
