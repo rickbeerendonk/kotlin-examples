@@ -5,8 +5,10 @@ println(Long.MIN_VALUE)  // -9223372036854775808
 println(Long.MAX_VALUE)  // 9223372036854775807
 
 // Explicit vs Implicit
-val explicit: Long = 9223372036854775807
-val implicit = 9223372036854775807
+val explicit: Long = 1
+val implicit1 = 1
+val implicit2 = 1L
 
-println(explicit::class.qualifiedName) // kotlin.Long
-println(implicit::class.qualifiedName) // kotlin.Long
+println(explicit::class.qualifiedName)  // kotlin.Long
+println(implicit1::class.qualifiedName) // kotlin.Int
+println(implicit2::class.qualifiedName) // kotlin.Long
