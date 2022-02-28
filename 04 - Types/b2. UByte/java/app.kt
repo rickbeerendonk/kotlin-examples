@@ -6,8 +6,8 @@ fun main() {
     println(UByte.MAX_VALUE) // 255
 
     // Explicit vs Implicit
-    val explicit: UByte = 255u
-    val implicit = 255u
+    val explicit: UByte = 255U
+    val implicit = 255U
 
     println(explicit::class.qualifiedName) // kotlin.UByte
     println(implicit::class.qualifiedName) // kotlin.UInt
