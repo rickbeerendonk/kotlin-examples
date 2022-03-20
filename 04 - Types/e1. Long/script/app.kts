@@ -8,7 +8,9 @@ println(Long.MAX_VALUE)  // 9223372036854775807
 val explicit: Long = 1
 val implicit1 = 1
 val implicit2 = 1L
+val implicit3 = 2147483648  // Max Int + 1
 
 println(explicit::class.qualifiedName)  // kotlin.Long
 println(implicit1::class.qualifiedName) // kotlin.Int
 println(implicit2::class.qualifiedName) // kotlin.Long
+println(implicit3::class.qualifiedName) // kotlin.Long
