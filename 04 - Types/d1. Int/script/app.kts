@@ -19,3 +19,8 @@ println(implicit::class.qualifiedName) // kotlin.Int
 println(123)   // 123  (Decimals)
 println(0b11)  //   3  (Binaries)
 println(0xFF)  // 255  (Hexadecimals)
+
+// Underscores
+
+println(1234567890)     // 1234567890
+println(1_234_567_890)  // 1234567890
