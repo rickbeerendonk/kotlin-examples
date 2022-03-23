@@ -19,6 +19,6 @@ fun main() {
 
     // Literal constants
 
-    println(1.23)    //     1.23  (Standard)
-    println(1.23e4)  // 12300.0   (Exponential)
+    println(1.23F)    //     1.23  (Standard)
+    println(1.23e4F)  // 12300.0   (Exponential)
 }
