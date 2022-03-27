@@ -2,6 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 FILE=$1
+FILE_DIR=$2
 
 clear
 
@@ -10,7 +11,7 @@ if [[ $FILE == *.kts ]]; then
 elif [[ $FILE == *.kt ]]; then
     echo Compile...
     COMPILED_FILE=temp/app.jar
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" "$FILE" "-include-runtime" "-d" "$COMPILED_FILE"
+    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
     if [[ -f "$COMPILED_FILE" ]]; then
         clear
         java -jar $COMPILED_FILE

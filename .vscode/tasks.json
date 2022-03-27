@@ -11,7 +11,7 @@
       },
       "type": "shell",
       //"command": "${workspaceFolder}${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc",
-      "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\"",
+      "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\" \"${fileDirname}\"",
       //"args": ["-script", "\"${file}\""],
       "group": {
         "kind": "build",
