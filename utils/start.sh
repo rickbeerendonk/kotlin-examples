@@ -15,18 +15,20 @@ clear
 if [[ $FILE == *.kts ]]; then
     # Script
     echo "${blue}${bold}info:${normal}${color_off} script"
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc" -version
+    # Show compiler version
+    #sh "$SCRIPT_DIR/kotlinc/bin/kotlinc" -version
     echo
 
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc" "-script" "$FILE"
+    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc" "-script" "$FILE"
 elif [[ $FILE == *.kt ]]; then
     # Java
     echo "${blue}${bold}info:${normal}${color_off} java"
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" -version
+    # Show compiler version
+    #sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -version
     echo
 
     COMPILED_FILE=temp/app.jar
-    sh "$SCRIPT_DIR/../kotlinc/bin/kotlinc-jvm" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
+    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
     if [[ -f "$COMPILED_FILE" ]]; then
         clear
         java -jar $COMPILED_FILE
