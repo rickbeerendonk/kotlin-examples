@@ -28,10 +28,10 @@ elif [[ $FILE == *.kt ]]; then
     echo
 
     COMPILED_FILE=temp/app.jar
-    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
+    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -cp $SCRIPT_DIR/lib/* "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
     if [[ -f "$COMPILED_FILE" ]]; then
         clear
-        java -jar $COMPILED_FILE
+        java -cp $SCRIPT_DIR/lib/* -jar $COMPILED_FILE
         rm $COMPILED_FILE
     fi
 fi
