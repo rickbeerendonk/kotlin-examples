@@ -7,10 +7,15 @@ class Demo {
 
     val prop2
         get() = "getter 2" + "..."
+
+    val prop3 = "prop 3"
+        get() = field + "..."
+
 }
 
 fun main() {
     val demo = Demo()
     println(demo.prop1)  // getter 1...
     println(demo.prop2)  // getter 2...
+    println(demo.prop3)  // prop 3...
 }
