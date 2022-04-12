@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.classes.properties.getter
+
 class Demo {
     val prop1: String
         get() = "getter 1" + "..."

@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.classes.properties.val_var
+
 class Demo {
     val readonly: String = "readonly"
     var readwrite: String = "readwrite"
