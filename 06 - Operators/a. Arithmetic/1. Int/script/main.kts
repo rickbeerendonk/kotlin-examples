@@ -1,8 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
-println("Numbers: 7 + 2: ${7 + 2}"); // 9
-println("Numbers: 7 - 2: ${7 - 2}"); // 5
-println("Numbers: 7 * 2: ${7 * 2}"); // 14
-println("Numbers: 7 / 2: ${7 / 2}"); // 3
-println("Numbers: 7 % 2: ${7 % 2}"); // 1
+println("Int: 7 + 2: ${7 + 2}");  // 9
+println("Int: 7 - 2: ${7 - 2}");  // 5
+println("Int: 7 * 2: ${7 * 2}");  // 14
+println("Int: 7 / 2: ${7 / 2}");  // 3
+println("Int: 7 % 2: ${7 % 2}");  // 1
