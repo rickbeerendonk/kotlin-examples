@@ -2,4 +2,4 @@
 // Copyright © 2022 Rick Beerendonk
 
 val str = "a" + "b"
-println("String: \"a\" + \"b\": ${str}");  // ab
+println("String: \"a\" + \"b\": ${str}")  // ab

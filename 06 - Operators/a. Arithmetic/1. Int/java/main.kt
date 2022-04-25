@@ -4,9 +4,9 @@
 package org.operators.arithmetic.int
 
 fun main() {
-    println("Int: 7 + 2: ${7 + 2}");  // 9
-    println("Int: 7 - 2: ${7 - 2}");  // 5
-    println("Int: 7 * 2: ${7 * 2}");  // 14
-    println("Int: 7 / 2: ${7 / 2}");  // 3
-    println("Int: 7 % 2: ${7 % 2}");  // 1
+    println("Int: 7 + 2: ${7 + 2}")  // 9
+    println("Int: 7 - 2: ${7 - 2}")  // 5
+    println("Int: 7 * 2: ${7 * 2}")  // 14
+    println("Int: 7 / 2: ${7 / 2}")  // 3
+    println("Int: 7 % 2: ${7 % 2}")  // 1
 }
