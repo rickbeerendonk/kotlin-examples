@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.byte
+
 fun main() {
     println(Byte.MIN_VALUE) // -128
     println(Byte.MAX_VALUE) // 127

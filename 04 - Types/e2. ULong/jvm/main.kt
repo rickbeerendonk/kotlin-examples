@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.ulong
+
 fun main() {
     println(ULong.MIN_VALUE)  // 0
     println(ULong.MAX_VALUE)  // 18446744073709551615

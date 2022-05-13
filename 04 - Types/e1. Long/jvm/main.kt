@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.long
+
 fun main() {
     println(Long.MIN_VALUE)  // -9223372036854775808
     println(Long.MAX_VALUE)  // 9223372036854775807

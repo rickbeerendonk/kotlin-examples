@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.ushort
+
 fun main() {
     println(UShort.MIN_VALUE) // 0
     println(UShort.MAX_VALUE) // 65535

@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.uint
+
 fun main() {
     println(UInt.MIN_VALUE)  // 0
     println(UInt.MAX_VALUE)  // 4294967295

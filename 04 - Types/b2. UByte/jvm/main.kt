@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.types.ubyte
+
 fun main() {
     println(UByte.MIN_VALUE) // 0
     println(UByte.MAX_VALUE) // 255
