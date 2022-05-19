@@ -9,7 +9,11 @@ fun main() {
     val moment = LocalDateTime.now()
     val hour = moment.hour
 
-    if (hour < 12) {
+    // One line
+    if (hour < 6) println("Good night")
+
+    // Block
+    if (hour >= 6 && hour < 12) {
         println("Good morning")
     }
 
