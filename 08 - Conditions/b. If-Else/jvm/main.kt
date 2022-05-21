@@ -18,6 +18,4 @@ fun main() {
     } else {
         println("Good night")
     }
-
-    println("Welcome!")
 }

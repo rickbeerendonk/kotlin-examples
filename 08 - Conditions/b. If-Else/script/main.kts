@@ -15,5 +15,3 @@ if (hour >= 6 && hour < 18) {
 } else {
     println("Good night")
 }
-
-println("Welcome!")
