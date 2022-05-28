@@ -28,3 +28,12 @@ val dayAsString2: String = when (dayOfWeek) {
     DayOfWeek.SUNDAY -> "Weekend 😏"
 }
 println(dayAsString2)
+
+// Int to String
+
+// else branch is mandatory when not all cases are covered
+val dayAsString3: String = when (dayOfWeek.value) {
+    in 1..5 -> "No weekend 😀"
+    else -> "Weekend 😏"
+}
+println(dayAsString3)
