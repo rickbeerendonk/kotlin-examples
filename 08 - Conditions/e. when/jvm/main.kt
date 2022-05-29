@@ -43,7 +43,7 @@ fun main() {
     when (month) {
         1, 2, 3 -> println("Winter")
         4, 5, 6 -> println("Spring")
-        7, 8, 9 -> println("Autumn")
+        in 7..9 -> println("Autumn")
         else -> println("Winter")
     }
 
