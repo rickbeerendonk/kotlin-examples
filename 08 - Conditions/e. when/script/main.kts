@@ -36,12 +36,20 @@ when (day) {
     else -> println("Weekend!")
 }
 
-// Multiple cases
+// Type & is
+val x: Any = "String"
+when (x) {
+    is Int -> println("Number")
+    is String -> println("Text")
+    !is String -> println("No Text")
+}
+
+// Multiple cases & in
 when (month) {
     1, 2, 3 -> println("Winter")
     4, 5, 6 -> println("Spring")
-    in 7..9 -> println("Autumn")
-    else -> println("Winter")
+    in 7..9 -> println("Summer")
+    else -> println("Autumn")
 }
 
 // when instead of if-then-else
