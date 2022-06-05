@@ -4,6 +4,8 @@
 package org.conditions.forrange
 
 fun main() {
+    for (i in 2 until 5) println(i)           // 2, 3, 4
+
     for (i in 2..5) println(i)                // 2, 3, 4, 5
 
     for (i in 1..10 step 3) println(i)        // 1, 4, 7, 10
