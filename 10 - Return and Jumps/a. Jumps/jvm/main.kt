@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
-package org.conditions.jumps
+package org.returnjumps.jumps
 
 fun main() {
     for (i in 1..20) {
