@@ -8,6 +8,14 @@ fun add(a: Int, b: Int): Int = a + b;
 // Return type inferred by the compiler
 fun multiply(a: Int, b: Int) = a * b;
 
+/*
+// Block => Return type cannot be inferred by the compiler
+fun multiply2(a: Int, b: Int) {
+    return a * b;
+}
+ */
+
+
 fun main() {
     println(add(1, 2))       // 3
     println(multiply(2, 3))  // 6
