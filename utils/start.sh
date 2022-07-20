@@ -21,8 +21,8 @@ if [[ $FILE == *.kts ]]; then
 
     sh "$SCRIPT_DIR/kotlinc/bin/kotlinc" "-script" "$FILE"
 elif [[ $FILE == *.kt ]]; then
-    # Java
-    echo "${blue}${bold}info:${normal}${color_off} java"
+    # JVM
+    echo "${blue}${bold}info:${normal}${color_off} jvm"
     # Show compiler version
     #sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -version
     echo
