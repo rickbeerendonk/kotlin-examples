@@ -81,11 +81,19 @@ the Kotlin IntelliJ IDEA plugin:
       - License: Apache 2 ([license/third_party/gwt_license.txt][gwt])
       - Origin: Derived from GWT, (C) 2007-08 Google Inc.
 
+ - Path: libraries/stdlib/native-wasm/src/kotlin/collections
+      - License: Apache 2 ([license/third_party/gwt_license.txt][gwt])
+      - Origin: Derived from GWT, (C) 2007-08 Google Inc.
+
  - Path: libraries/stdlib/js-v1/src/js/long.js
       - License: Apache 2 ([license/third_party/closure-compiler_LICENSE.txt][closure-compiler])
       - Origin: Google Closure Library, Copyright 2009 The Closure Library Authors
 
  - Path: libraries/stdlib/js-v1/src/js/polyfills.js
+      - License: Boost Software License 1.0 ([license/third_party/boost_LICENSE.txt][boost])
+      - Origin: Derived from boost special math functions, Copyright Eric Ford & Hubert Holin 2001.
+
+ - Path: libraries/stdlib/js/src/kotlin/js/math.polyfills.kt
       - License: Boost Software License 1.0 ([license/third_party/boost_LICENSE.txt][boost])
       - Origin: Derived from boost special math functions, Copyright Eric Ford & Hubert Holin 2001.
 
@@ -116,6 +124,18 @@ the Kotlin IntelliJ IDEA plugin:
  - Path: compiler/tests-common/tests/org/jetbrains/kotlin/codegen/ir/ComposeLikeGenerationExtension.kt
       - License: Apache 2 ([license/third_party/aosp_license.txt][aosp])
       - Origin: Derived from JetPack Compose compiler plugin code, Copyright 2019 The Android Open Source Project
+
+ - Path: libraries/stdlib/wasm/src/kotlin/text/FloatingPointConverter.kt
+   - License: MIT ([license/third_party/asmble_license.txt][asmble])
+   - Origin: Copyright (C) 2018 Chad Retz
+
+ - Path: libraries/stdlib/wasm/src/kotlin/math/fdlibm/
+   - License: SUN ([license/third_party/sun_license.txt][sun])
+   - Origin: Copyright (C) 1993 by Sun Microsystems, Inc.
+
+ - Path: kotlin-native/runtime/src/main/cpp/Utils.cpp
+   - License: Boost Software License 1.0 ([license/third_party/boost_LICENSE.txt][boost])
+   - Origin: Derived from boost hash functions, Copyright 2005-2014 Daniel James
 
 ## Kotlin Test Data
 
