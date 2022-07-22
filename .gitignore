@@ -5,3 +5,6 @@
 **/obj
 **/out
 **/temp
+
+# Allow everything in utils
+!utils/**
