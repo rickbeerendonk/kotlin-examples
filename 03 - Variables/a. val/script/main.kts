@@ -2,13 +2,13 @@
 // Copyright © 2022 Rick Beerendonk
 
 // Explicit type
-val explicit: Int = 123;
+val explicit: Int = 123
 
 // Implicit type
-val implicit = 456;
+val implicit = 456
 
 println(explicit::class.simpleName) // Int
 println(implicit::class.simpleName) // Int
 
 // error: val cannot be reassigned
-// explicit = implicit;
+// explicit = implicit

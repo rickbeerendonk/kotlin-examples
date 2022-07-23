@@ -16,15 +16,15 @@ fun main() {
     test(1)
     // 1, 10, default, Hello world!
 
-    println("test(1, 2)");
-    test(1, 2);
+    println("test(1, 2)")
+    test(1, 2)
     // 1, 2, default, Hello world!
 
-    println("test(1, c = \"other\")");
-    test(1, c = "other");
+    println("test(1, c = \"other\")")
+    test(1, c = "other")
     // 1, 10, other, Hello world!
 
-    println("test(1, d = {\"Hello Kotlin!\"})");
-    test(1, d = {"Hello Kotlin!"});
+    println("test(1, d = {\"Hello Kotlin!\"})")
+    test(1, d = {"Hello Kotlin!"})
     // 1, 10, default, Hello Kotlin!
 }

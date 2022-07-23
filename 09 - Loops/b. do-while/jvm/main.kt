@@ -4,11 +4,11 @@
 package org.conditions.dowhile
 
 fun main() {
-    var i = 10;
+    var i = 10
 
     do {
-        println("Iteration $i");
-        i++;
+        println("Iteration $i")
+        i++
     } while (i < 5)
 
     println("End")

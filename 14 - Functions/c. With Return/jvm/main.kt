@@ -4,7 +4,7 @@
 package org.functions.withreturn
 
 fun add(a: Int, b: Int): Int {
-    return a + b;
+    return a + b
 }
 
 fun main() {

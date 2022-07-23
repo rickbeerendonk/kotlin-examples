@@ -15,9 +15,9 @@ class Demo {
     fun addOne(value: Int) = value + 1
     
     fun multipleLine(value: Int): Int {
-        var newValue = value + 1;
-        newValue *= 2;
-        return newValue;
+        var newValue = value + 1
+        newValue *= 2
+        return newValue
     }
 }
 

@@ -2,7 +2,7 @@
 // Copyright © 2022 Rick Beerendonk
 
 fun add(a: Int, b: Int): Int {
-    return a + b;
+    return a + b
 }
 
 val sum = add(1, 2)

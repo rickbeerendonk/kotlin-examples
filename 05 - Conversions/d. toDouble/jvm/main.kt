@@ -7,7 +7,7 @@ fun main() {
     // Int
 
     // error: The integer literal does not conform to the expected type
-    //val d1: Double = 123;
+    //val d1: Double = 123
 
     val d2: Double = 123.toDouble()
     println(d2)                      // 123.0

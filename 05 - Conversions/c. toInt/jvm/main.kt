@@ -12,8 +12,8 @@ fun main() {
 
     // Double
 
-    val d1: Double = 123.456;
-    val i1 = d1.toInt();
+    val d1: Double = 123.456
+    val i1 = d1.toInt()
 
     println(i1)                       // 123
     println(i1::class.qualifiedName)  // kotlin.Int

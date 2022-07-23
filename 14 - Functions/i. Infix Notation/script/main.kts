@@ -6,7 +6,7 @@
 // - single parameter without a default (and no vararg)
 
 infix fun Int.power(x: Int): Int {
-    var result = this;
+    var result = this
     for (i in 2..x) result *= this
     return result
 }

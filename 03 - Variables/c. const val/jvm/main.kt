@@ -2,13 +2,13 @@
 // Copyright © 2022 Rick Beerendonk
 
 // Explicit type
-const val explicit: Int = 123;
+const val explicit: Int = 123
 
 // Implicit type
-const val implicit = 456;
+const val implicit = 456
 
 // error: Only primitives and String are allowed
-//const val iserror = listOf("a", "b");
+//const val iserror = listOf("a", "b")
 
 fun main() {
     println(explicit::class.simpleName) // Int
@@ -18,5 +18,5 @@ fun main() {
     //const val illegal = 789
 
     // error: val cannot be reassigned
-    //explicit = implicit;
+    //explicit = implicit
 }

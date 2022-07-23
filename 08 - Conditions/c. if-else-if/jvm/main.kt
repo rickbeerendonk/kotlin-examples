@@ -10,12 +10,12 @@ fun main() {
     val hour = moment.hour
 
     if (hour < 6) {
-        println("Good night");
+        println("Good night")
     } else if (hour < 12) {
-        println("Good morning");
+        println("Good morning")
     } else if (hour < 18) {
-        println("Good afternoon");
+        println("Good afternoon")
     } else {
-        println("Good evening");
+        println("Good evening")
     }
 }

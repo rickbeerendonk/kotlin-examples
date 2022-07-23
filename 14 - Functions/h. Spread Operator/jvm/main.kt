@@ -4,7 +4,7 @@
 package org.functions.spread
 
 fun sum(vararg a: Int): Int {
-    var result = 0;
+    var result = 0
     for (value in a) result += value
     return result
 }

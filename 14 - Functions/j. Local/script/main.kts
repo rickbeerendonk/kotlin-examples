@@ -6,7 +6,7 @@ fun test() {
         println(text)
     }
 
-    local("abc");
+    local("abc")
 }
 
 test()

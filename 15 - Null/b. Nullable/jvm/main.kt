@@ -4,12 +4,12 @@
 package org.null_.nullable
 
 fun main() {
-    var str: String? = "abc";
+    var str: String? = "abc"
 
     println(str)  // abc
 
     // no error
-    str = null;
+    str = null
 
     println(str)  // null
 }

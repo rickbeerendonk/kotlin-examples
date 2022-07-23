@@ -6,8 +6,8 @@ package org.converions.tobyte
 fun main() {
     // Int
 
-    val i1: Int = 100;
-    val b1 = i1.toByte();
+    val i1: Int = 100
+    val b1 = i1.toByte()
 
     println(b1)                       // 100
     println(b1::class.qualifiedName)  // kotlin.Byte

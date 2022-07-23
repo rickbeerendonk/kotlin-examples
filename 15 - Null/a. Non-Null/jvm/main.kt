@@ -4,8 +4,8 @@
 package org.null_.nonnull
 
 fun main() {
-    var str: String = "abc";
+    var str: String = "abc"
 
     // error: null can not be a value of a non-null type String
-    str = null;
+    str = null
 }
