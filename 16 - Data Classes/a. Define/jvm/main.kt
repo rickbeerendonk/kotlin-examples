@@ -16,6 +16,10 @@ fun main() {
     val demo1 = Demo(1, "two")
     val demo2 = Demo(1, "two")
 
+    // Generated Properties
+    println(demo1.one)                // 1
+    println(demo1.two)                // two
+
     // Supported methods (open):
     println(demo1.equals(demo2))      // true
     println(demo1.hashCode())         // 115307
