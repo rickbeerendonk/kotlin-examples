@@ -4,11 +4,11 @@
 package org.one
 
 open class A {
-    public var publicMember = 0;
-    var anotherPublicMember = 0;
-    private var privateMember = 0;
+    public    var publicMember = 0;
+              var anotherPublicMember = 0;
+    private   var privateMember = 0;
     protected var protectedMember = 0;
-    internal var internalMember = 0;
+    internal  var internalMember = 0;
 
     fun Test() {
         this.publicMember = 1;
