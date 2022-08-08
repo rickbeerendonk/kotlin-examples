@@ -4,15 +4,13 @@
 package org.lambdas.funtypes
 
 fun main() {
-    val nothing: () -> Unit = fun () {}
-    val double: (Int) -> Int = fun (a: Int) = 2 * a
-    val isSize: (String, Int) -> Boolean = fun (text: String, size: Int) = text.length == size
+    val noReturn:   () -> Unit              = fun () {}
+    val zeroParams: () -> String            = fun (): String = "nothing to see here"
+    val oneParam:   (Int) -> String         = fun (a: Int): String = "a=${a}"
+    val twoParams:  (Int, String) -> String = fun (a: Int, b: String): String = "a=${a}, b=${b}"
 
-    println(nothing())
-    println(double(2))
-    println(isSize("abc", 3))
-
-    // kotlin.Unit
-    // 4
-    // true
+    println(noReturn())         // kotlin.Unit
+    println(zeroParams())       // nothing to see here
+    println(oneParam(1))        // a=1
+    println(twoParams(1, "2"))  // a=1, b=2
 }
