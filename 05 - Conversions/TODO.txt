@@ -1,0 +1,35 @@
+- toBooleanStrict
+- toBooleanStrictOrNull
+
+- toByteOrNull
+- toShort
+- toShortOrNull
+- toIntOrNull
+- toLong
+- toLongOrNull
+- toBigInteger
+- toBigIntegerOrNull
+
+- toFloat
+- toFloatOrNull
+- toDoubleOrNull
+- toBigDecimal
+- toBigDecimalOrNull
+
+- toByteArray
+- toCharArray
+- toCollection
+- toHashSet
+- toList
+- toMutableList
+- toSet
+- toSortedSet
+
+- toUByte
+- toUByteOrNull
+- toUInt
+- toUIntOrNull
+- toUShort
+- toUShortOrNull
+- toULong
+- toULongOrNull
