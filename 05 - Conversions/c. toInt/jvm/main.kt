@@ -4,6 +4,12 @@
 package org.converions.toint
 
 fun main() {
+    // Byte
+
+    val b: Byte = 127;
+    println(b.toInt())  // 127
+
+
     // Long
 
     println(Long.MIN_VALUE.toInt())   // 0

@@ -1,6 +1,12 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+// Byte
+
+val b: Byte = 127;
+println(b.toInt())  // 127
+
+
 // Long
 
 println(Long.MIN_VALUE.toInt())   // 0
