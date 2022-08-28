@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+package org.variables.var
+
 fun main() {
     // Explicit type
     var explicit: Int = 123
