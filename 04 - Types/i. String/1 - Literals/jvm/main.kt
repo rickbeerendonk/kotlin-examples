@@ -4,7 +4,7 @@
 package org.types.string.literals
 
 fun main() {
-    // One line
+    // Single line
 
     val str = "Text"
     println(str)                       // Text
@@ -17,7 +17,7 @@ fun main() {
 
     val multi = """
         one
-        two
+        "two"
     """
     println(multi)
 
@@ -28,7 +28,7 @@ fun main() {
     println(str[0]::class.qualifiedName)  // kotlin.Char
 
 
-    // Special characters
+    // Special characters (single line)
     
     println("first \"line\" \nsecond line")
 }
