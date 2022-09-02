@@ -9,5 +9,6 @@ fun main() {
     val moment = LocalDateTime.now()
     val hour = moment.hour
 
-    println(if (hour >= 6 && hour < 18) "Good day" else "Good night")
+    val str = if (hour >= 6 && hour < 18) "Good day" else "Good night";
+    println(str)
 }
