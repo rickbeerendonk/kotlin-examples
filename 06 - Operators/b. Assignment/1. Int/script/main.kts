@@ -2,27 +2,27 @@
 // Copyright © 2022 Rick Beerendonk
 
 var a = 7
-println("a: ${a}")  // 7
+println("a: $a")  // 7
 
 a = 2
-println("Int: a = 2: ${a}") // 2
+println("Int: a = 2: $a") // 2
 
 a = 7
 a += 2
-println("Int: a += 2: ${a}") // 9
+println("Int: a += 2: $a") // 9
 
 a = 7
 a -= 2
-println("Int: a -= 2: ${a}") // 5
+println("Int: a -= 2: $a") // 5
 
 a = 7
 a *= 2
-println("Int: a *= 2: ${a}") // 14
+println("Int: a *= 2: $a") // 14
 
 a = 7
 a /= 2
-println("Int: a /= 2: ${a}") // 3
+println("Int: a /= 2: $a") // 3
 
 a = 7
 a %= 2
-println("Int: a %= 2: ${a}") // 1
+println("Int: a %= 2: $a") // 1
