@@ -3,8 +3,8 @@
 
 val noReturn:   () -> Unit              = fun () {}
 val zeroParams: () -> String            = fun (): String = "nothing to see here"
-val oneParam:   (Int) -> String         = fun (a: Int): String = "a=${a}"
-val twoParams:  (Int, String) -> String = fun (a: Int, b: String): String = "a=${a}, b=${b}"
+val oneParam:   (Int) -> String         = fun (a: Int): String = "a=$a"
+val twoParams:  (Int, String) -> String = fun (a: Int, b: String): String = "a=$a, b=$b"
 
 println(noReturn())         // kotlin.Unit
 println(zeroParams())       // nothing to see here
