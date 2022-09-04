@@ -11,21 +11,21 @@ open class A {
     internal  var internalMember = 0;
 
     fun Test() {
-        this.publicMember = 1;
-        this.anotherPublicMember = 1;
-        this.privateMember = 1;
-        this.protectedMember = 1;
-        this.internalMember = 1;
+        publicMember = 1;
+        anotherPublicMember = 1;
+        privateMember = 1;
+        protectedMember = 1;
+        internalMember = 1;
     }
 }
 
 class B : A() {
     fun Test2() {
-        this.publicMember = 2;
-        this.anotherPublicMember = 2;
-        // this.privateMember = 2;
-        this.protectedMember = 2;
-        this.internalMember = 2;
+        publicMember = 2;
+        anotherPublicMember = 2;
+        // privateMember = 2;
+        protectedMember = 2;
+        internalMember = 2;
     }
 }
 
