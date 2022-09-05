@@ -5,6 +5,9 @@ package org.functions.withparameters
 
 // Implicit return
 fun one(a: String) {
+    // Parameters are val:
+    //a = "changed"
+
     println(a)
 }
 
