@@ -31,7 +31,9 @@ elif [[ $FILE == *.kt ]]; then
     sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -cp $SCRIPT_DIR/lib/* "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
     if [[ -f "$COMPILED_FILE" ]]; then
         clear
-        java -cp $SCRIPT_DIR/lib/* -jar $COMPILED_FILE
+        # Works for coroutine examples (without main in a package):
+        #java -cp $SCRIPT_DIR/lib/*:$COMPILED_FILE MainKt 
+        java -jar $COMPILED_FILE
         rm $COMPILED_FILE
     fi
 fi
