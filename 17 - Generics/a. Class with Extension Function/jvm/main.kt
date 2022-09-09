@@ -3,12 +3,12 @@
 
 package org.generics.classextensionfun
 
-class Demo<T>(val one: T, val two: T);
+class Demo<T>(val one: T, val two: T)
 
 // Extension function
 fun <T> Demo<T>.addStr() = "${this.one} + ${this.two}"
 
 fun main() {
     val demo1 = Demo(1, 2)
-    println(demo1.addStr())
+    println(demo1.addStr())  // 1 + 2
 }

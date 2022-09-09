@@ -6,7 +6,7 @@ package org.converions.toint
 fun main() {
     // Byte
 
-    val b: Byte = 127;
+    val b: Byte = 127
     println(b.toInt())  // 127
 
 

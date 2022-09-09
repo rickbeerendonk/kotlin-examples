@@ -11,7 +11,7 @@ class Outer(val value: Int) {
 
     inner class Inner() {
         fun foo(): String {
-            return "Inner: " + value;
+            return "Inner: " + value
         }
     }
 }

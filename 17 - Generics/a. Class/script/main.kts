@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
-class Demo<T>(val one: T, val two: T);
+class Demo<T>(val one: T, val two: T)
 
 val demo1 = Demo(1, 2)
 val demo2 = Demo(3.0, 4.0)

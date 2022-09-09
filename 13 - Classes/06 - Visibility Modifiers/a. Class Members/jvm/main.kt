@@ -8,11 +8,11 @@ import org.one.*
 class D {
     fun Test() {
         val a = A()
-        a.publicMember = 4;
-        a.anotherPublicMember = 4;
-        // a.privateMember = 4;
-        // a.protectedMember = 4;
-        a.internalMember = 4;
+        a.publicMember = 4
+        a.anotherPublicMember = 4
+        // a.privateMember = 4
+        // a.protectedMember = 4
+        a.internalMember = 4
     }
 }
 

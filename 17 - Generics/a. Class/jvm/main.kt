@@ -3,7 +3,7 @@
 
 package org.generics.class_
 
-class Demo<T>(val one: T, val two: T);
+class Demo<T>(val one: T, val two: T)
 
 fun main() {
     val demo1 = Demo(1, 2)
