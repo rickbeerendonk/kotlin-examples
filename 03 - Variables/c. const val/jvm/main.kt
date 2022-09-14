@@ -4,21 +4,21 @@
 package org.variables.const
 
 // Explicit type
-const val explicit: Int = 123
+const val EXPLICIT: Int = 123
 
 // Implicit type
-const val implicit = 456
+const val IMPLICIT = 456
 
 // error: Only primitives and String are allowed
-//const val iserror = listOf("a", "b")
+//const val IS_ERROR = listOf("a", "b")
 
 fun main() {
-    println(explicit::class.simpleName) // Int
-    println(implicit::class.simpleName) // Int
+    println(EXPLICIT::class.simpleName) // Int
+    println(IMPLICIT::class.simpleName) // Int
 
     //error: modifier 'const' is not applicable to 'local variable'
-    //const val illegal = 789
+    //const val ILLEGAL = 789
 
     // error: val cannot be reassigned
-    //explicit = implicit
+    //EXPLICIT = IMPLICIT
 }
