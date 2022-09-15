@@ -15,11 +15,17 @@ fun main() {
 
     // Multi line
 
-    val multi = """
+    val multi1 = """
         one
         "two"
     """
-    println(multi)
+    println(multi1)
+
+    val multi2 = """
+        one
+        "two"
+    """.trimIndent()
+    println(multi2)
 
 
     // Get character

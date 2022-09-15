@@ -12,11 +12,17 @@ println(str::class.qualifiedName)  // kotlin.String
 
 // Multi line
 
-val multi = """
-one
-"two"
+val multi1 = """
+    one
+    "two"
 """
-println(multi)
+println(multi1)
+
+val multi2 = """
+    one
+    "two"
+""".trimIndent()
+println(multi2)
 
 
 // Get character
