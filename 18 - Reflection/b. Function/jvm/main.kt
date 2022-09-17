@@ -6,13 +6,14 @@ package org.reflection._fun
 import kotlin.reflect.*
 
 fun demo1() {}
-fun demo2(value: Int) = value.toString()
+private fun demo2(value: Int) = value.toString()
 
 fun main() {
     // Function Reference
     //val ref: KFunction0<Unit> = ::demo1
     val ref: KFunction1<Int, String> = ::demo2
-    //val ref4: KProperty1<String, Int> = String::length
+
+    println("Call ref with 456: ${ref(456)}")
 
     println("Abstract: ${ref.isAbstract}")  // false
     println("External: ${ref.isExternal}")  // false
