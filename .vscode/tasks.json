@@ -12,6 +12,9 @@
       "type": "shell",
       //"command": "${workspaceFolder}${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc",
       "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\" \"${fileDirname}\"",
+      "windows": {
+        "command": "\"${workspaceFolder}${pathSeparator}utils${pathSeparator}start.bat\" \\\"${file}\\\" \\\"${fileDirname}\\\""
+      },
       //"args": ["-script", "\"${file}\""],
       "group": {
         "kind": "build",
