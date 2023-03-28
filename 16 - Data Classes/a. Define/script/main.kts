@@ -7,6 +7,11 @@
 // error: data class primary constructor must only have property (val / var) parameters
 //data class DemoNoVarVal(one: Int)
 
+// error: Modifier 'abstract/open/sealed/inner' is incompatible with 'data'
+//abstract data class DemoNoAbstract(val one: Int)
+//open data class DemoNoOpen(val one: Int)
+//sealed data class DemoNoSealed(val one: Int)
+
 data class Demo(val one: Int, var two: String)
 
 // Create
