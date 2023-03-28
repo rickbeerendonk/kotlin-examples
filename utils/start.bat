@@ -17,7 +17,7 @@ if "%FILE:~-4%" == ".kts" (
     rem call "%SCRIPT_DIR%\kotlinc\bin\kotlinc" -version
     echo.
 
-    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc" "-script" "%FILE%"
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc.bat" "-script" "%FILE%"
 ) else if "%FILE:~-3%" == ".kt" (
     rem JVM
     echo jvm
@@ -26,16 +26,14 @@ if "%FILE:~-4%" == ".kts" (
     rem call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm" -version
     echo.
 
-    set COMPILED_FILE="temp\\app.jar"
-    echo %FILE%
-    echo %COMPILED_FILE%
+    set COMPILED_FILE="temp\app.jar"
 
-    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm" -cp "%SCRIPT_DIR%\lib\*" "%FILE_DIR%" "-include-runtime" "-d" "%COMPILED_FILE%"
-    if exist "%COMPILED_FILE%" (
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm.bat" -cp "%SCRIPT_DIR%\lib\*" "%FILE_DIR%" "-include-runtime" "-d" "temp\app.jar"
+    if exist "temp\app.jar" (
         cls
         rem Works for coroutine examples (without main in a package):
         rem java -cp "%SCRIPT_DIR%\lib\*";"%COMPILED_FILE%" MainKt 
-        java -jar "%COMPILED_FILE%"
-        del "%COMPILED_FILE%"
+        java -jar "temp\app.jar"
+        del "temp\app.jar"
     )
 )
