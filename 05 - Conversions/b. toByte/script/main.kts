@@ -5,6 +5,7 @@
 
 val i1: Int = 100
 val b1 = i1.toByte()
+// val b1: Byte = i1   // FAIL
 
 println(b1)                       // 100
 println(b1::class.qualifiedName)  // kotlin.Byte
