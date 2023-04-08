@@ -29,6 +29,11 @@ fun main() {
     println(1.999999999999999.toInt())   // 1
     println(1.9999999999999999.toInt())  // 2
 
+    println(2147483646L.toInt())     // 2147483646
+    println(2147483647L.toInt())     // 2147483647
+    println(2147483648L.toInt())     // -2147483648
+    println(2147483649L.toInt())     // -2147483647
+
     println(2147483646.0.toInt())     // 2147483646
     println(2147483647.0.toInt())     // 2147483647
     println(2147483648.0.toInt())     // 2147483647
