@@ -5,5 +5,5 @@ package org.operators.arithmetic.double
 
 fun main() {
     val str = "a" + "b"
-    println("String: \"a\" + \"b\": ${str}")  // ab
+    println("String: \"a\" + \"b\": ${str}")  // String: "a" + "b": ab
 }
