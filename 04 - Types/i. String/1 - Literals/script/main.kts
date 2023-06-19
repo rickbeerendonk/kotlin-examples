@@ -24,6 +24,12 @@ val multi2 = """
 """.trimIndent()
 println(multi2)
 
+val multi3 = """
+    | one
+    | "two"
+""".trimMargin()
+println(multi3)
+
 
 // Get character
 
