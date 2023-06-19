@@ -3,14 +3,17 @@
 
 package org.functions.local
 
-fun test() {
-    fun local(text: String) {
-        println(text)
+fun test(a: Int = 1) {
+    val b = 2
+
+    fun local(c: Int) {
+        // Access to everything within fun test()
+        println("$a $b $c")
     }
 
-    local("abc")
+    local(3)
 }
 
 fun main() {
-    test()
+    test()  // 1 2 3
 }
