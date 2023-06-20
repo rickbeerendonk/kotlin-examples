@@ -3,6 +3,7 @@
 
 data class Demo(val one: Char) {
     var two: String = ""
+    //operator fun component2() = two;
 }
 
 // Create
@@ -18,5 +19,5 @@ println(demo1.toString())         // Demo(one=1)
 
 // Supported methods (final):
 println(demo1.component1())       // 1
-//println(demo1.component2())       // FAIL
+//println(demo1.component2())       // FAIL, unless manually written
 //println(demo1.copy(two = "new"))  // FAIL
