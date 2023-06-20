@@ -4,7 +4,6 @@
 fun one(a: String) {
     // Require throws an IllegalArgumentException if the value is false.
     require(a != "")
-    //require(a != "", { "Custom message: Parameter a should not be empty "})
 
     println(a)
 }
