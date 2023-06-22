@@ -7,15 +7,15 @@ interface Intf {
     fun print()
 }
 
-class Base(val message: String) : Intf {
-    override fun print() { println(message) }
+class Base() : Intf {
+    override fun print() { println("Base") }
 }
 
 class Derived(b: Base) : Intf by b
 
 fun main() {
-    val b = Base("Message in Base")
-    Derived(b).print()
-
-    // Message in Base
+    val b = Base()
+    val d = Derived(b)
+    d.print()
+    // Base
 }
