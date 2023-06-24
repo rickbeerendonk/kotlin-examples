@@ -26,9 +26,9 @@ fun main() {
 
     // TODO
     println("annotations: ${ref.annotations}")
-    println("name: ${ref.name}")
-    println("parameters: ${ref.parameters}")
-    println("returnType: ${ref.returnType}")
+    println("name: ${ref.name}")                      // demo2
+    println("parameters: ${ref.parameters}")          // [parameter #0 value of fun demo2(kotlin.Int): kotlin.String]
+    println("returnType: ${ref.returnType}")          // kotlin.String
     println("typeParameters: ${ref.typeParameters}")
-    println("visibility: ${ref.visibility}")
+    println("visibility: ${ref.visibility}")          // PRIVATE
 }
