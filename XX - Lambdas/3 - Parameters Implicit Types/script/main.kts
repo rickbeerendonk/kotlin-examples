@@ -12,3 +12,11 @@ println(two(2, 3))
 // kotlin.Unit
 // 2
 // 6
+
+fun myPrint(f: (Int) -> (Int)) {
+    println(f(123))
+}
+
+myPrint { c -> 2 * c }
+
+// 246
