@@ -10,7 +10,7 @@ fun main() {
     val moment = LocalDateTime.now()
     val dayOfWeek = moment.getDayOfWeek()
 
-    // Enum to String
+    // === Enum to String ===
 
     // else branch is mandatory when not all cases are covered
     val dayAsString1: String = when (dayOfWeek) {
@@ -32,7 +32,7 @@ fun main() {
     }
     println(dayAsString2)
 
-    // Int to String
+    // === Int to String ===
 
     // else branch is mandatory when not all cases are covered
     val dayAsString3: String = when (dayOfWeek.value) {
@@ -40,4 +40,11 @@ fun main() {
       else -> "Weekend 😏"
     }
     println(dayAsString3)
+
+    // else branch is mandatory when not all cases are covered
+    val dayAsString4: String = when (dayOfWeek.value) {
+      !in 1..5 -> "Weekend 😏"
+      else -> "No weekend 😀"
+    }
+    println(dayAsString4)
 }
