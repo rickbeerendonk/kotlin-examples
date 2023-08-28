@@ -47,8 +47,8 @@ when (x) {
 // Multiple cases & in
 when (month) {
     1, 2, 3 -> println("Winter")
-    4, 5, 6 -> println("Spring")
-    in 7..9 -> println("Summer")
+    in 4..6 -> println("Spring")
+    !in 10..12 -> println("Summer")
     else -> println("Autumn")
 }
 
