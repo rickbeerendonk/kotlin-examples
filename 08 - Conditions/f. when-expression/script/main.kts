@@ -5,20 +5,25 @@ import java.time.LocalDateTime
 import java.time.DayOfWeek
 
 val moment = LocalDateTime.now()
+val hour = moment.hour
 val dayOfWeek = moment.getDayOfWeek()
+val day = moment.getDayOfWeek().value
+val month = moment.monthValue
 
-// === Enum to String ===
+var result: String;
+
+// === Enum ===
 
 // else branch is mandatory when not all cases are covered
-val dayAsString1: String = when (dayOfWeek) {
+result = when (dayOfWeek) {
     DayOfWeek.SATURDAY,
     DayOfWeek.SUNDAY -> "Weekend 😏"
     else -> "No weekend 😀"
 }
-println(dayAsString1)
+println(result)
 
 // else branch is not mandatory when all cases are covered
-val dayAsString2: String = when (dayOfWeek) {
+result = when (dayOfWeek) {
     DayOfWeek.MONDAY,
     DayOfWeek.TUESDAY,
     DayOfWeek.WEDNESDAY,
@@ -27,20 +32,48 @@ val dayAsString2: String = when (dayOfWeek) {
     DayOfWeek.SATURDAY,
     DayOfWeek.SUNDAY -> "Weekend 😏"
 }
-println(dayAsString2)
+println(result)
 
-// === Int to String ===
+// === Int ===
 
 // else branch is mandatory when not all cases are covered
-val dayAsString3: String = when (dayOfWeek.value) {
+result = when (dayOfWeek.value) {
     in 1..5 -> "No weekend 😀"
     else -> "Weekend 😏"
 }
-println(dayAsString3)
+println(result)
 
 // else branch is mandatory when not all cases are covered
-val dayAsString4: String = when (dayOfWeek.value) {
+result = when (dayOfWeek.value) {
     !in 1..5 -> "Weekend 😏"
     else -> "No weekend 😀"
 }
-println(dayAsString4)
+println(result)
+
+// === Type & is ===
+val x: Any = "String"
+result = when (x) {
+    is Int -> "Number"
+    is String -> "Text"
+    !is String -> "No Text"
+    else -> "No Number or Text"
+}
+println(result)
+
+// === Multiple cases & in ===
+result = when (month) {
+    1, 2, 3 -> "Winter"
+    in 4..6 -> "Spring"
+    !in 10..12 -> "Summer"
+    else -> "Autumn"
+}
+println(result)
+
+// === when instead of if-then-else ===
+result = when {
+    hour < 6 -> "Good night"
+    hour < 12 -> "Good morning"
+    hour < 18 -> "Good afternoon"
+    else -> "Good evening"
+}
+println(result)
