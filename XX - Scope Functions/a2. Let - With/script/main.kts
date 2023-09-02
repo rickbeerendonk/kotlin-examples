@@ -14,9 +14,12 @@ class Demo(val name: String) {
 // With:
 // - No variable needed
 // - it refers to object
-// let() has NO return value (kotlin.Unit)
-Demo("First").let {
+// - let() return = lambda return
+val result = Demo("First").let {
     it.add(Demo("one"))
     it.add(Demo("two"))
     println(it)  // First contains 2 demos.
+    it // return value
 }
+
+println(result)  // First contains 2 demos.
