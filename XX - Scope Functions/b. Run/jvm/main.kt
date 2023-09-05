@@ -16,6 +16,7 @@ class Demo(val name: String) {
 fun main() {
     // With:
     // - No variable needed
+    // - Extension method
     // - this refers to object
     // - run() return = lambda return
     val result = Demo("First").run {

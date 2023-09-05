@@ -11,16 +11,15 @@ class Demo(val name: String) {
     override fun toString() = "$name contains ${list.size} demos."
 }
 
-// let():
 // - No variable needed
-// - Extension method
-// - it refers to object
-// - let() return = lambda return
-val result = Demo("First").let {
-    it.add(Demo("one"))
-    it.add(Demo("two"))
-    println(it)  // First contains 2 demos.
-    it // return value
+// - No extension method
+// - this refers to object
+// - run() return = lambda return
+val result = with(Demo("First")) {
+    add(Demo("one"))
+    add(Demo("two"))
+    println(this)  // First contains 2 demos.
+    this // return value
 }
 
 println(result)  // First contains 2 demos.

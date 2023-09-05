@@ -11,7 +11,7 @@ class Demo(val name: String) {
     override fun toString() = "$name contains ${list.size} demos."
 }
 
-// Without:
+// Without Scope Function:
 // - variable needed
 // - name repeated everywhere
 val demo = Demo("First");

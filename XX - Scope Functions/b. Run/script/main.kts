@@ -13,6 +13,7 @@ class Demo(val name: String) {
 
 // With:
 // - No variable needed
+// - Extension method
 // - this refers to object
 // - run() return = lambda return
 val result = Demo("First").run {
