@@ -15,7 +15,7 @@ class Demo(val name: String) {
 // - No variable needed
 // - Extension method
 // - this refers to object
-// - run() return = lambda return
+// - return = lambda return
 val result = Demo("First").run {
     add(Demo("one"))
     add(Demo("two"))

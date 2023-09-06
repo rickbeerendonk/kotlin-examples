@@ -17,7 +17,7 @@ fun main() {
     // - No variable needed
     // - No extension method
     // - this refers to object
-    // - run() return = lambda return
+    // - return = lambda return
     val result = with(Demo("First")) {
         add(Demo("one"))
         add(Demo("two"))

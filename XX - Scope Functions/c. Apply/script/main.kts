@@ -12,14 +12,14 @@ class Demo(val name: String) {
 }
 
 // - No variable needed
-// - No extension method
+// - Extension method
 // - this refers to object
-// - run() return = lambda return
-val result = with(Demo("First")) {
+// - return = context (Demo)
+val result = Demo("First").apply {
     add(Demo("one"))
     add(Demo("two"))
     println(this)  // First contains 2 demos.
-    this // return value
+    // return value NOT needed
 }
 
 println(result)  // First contains 2 demos.
