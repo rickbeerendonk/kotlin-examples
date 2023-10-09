@@ -9,3 +9,9 @@ while (i < 5) {
 }
 
 println("End")
+
+// Iteration 1
+// Iteration 2
+// Iteration 3
+// Iteration 4
+// End
