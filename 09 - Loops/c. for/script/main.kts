@@ -10,3 +10,19 @@ for (player in players) println("Tennis player: $player")
 for (c in players[0]) {
     println(c)
 }
+
+// Tennis player: Rafael Nadal
+// Tennis player: Roger Federer
+// Tennis player: Serena Williams
+// R
+// a
+// f
+// a
+// e
+// l
+//  
+// N
+// a
+// d
+// a
+// l

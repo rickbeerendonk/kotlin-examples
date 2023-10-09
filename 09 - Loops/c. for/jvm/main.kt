@@ -14,3 +14,19 @@ fun main() {
         println(c)
     }
 }
+
+// Tennis player: Rafael Nadal
+// Tennis player: Roger Federer
+// Tennis player: Serena Williams
+// R
+// a
+// f
+// a
+// e
+// l
+//  
+// N
+// a
+// d
+// a
+// l
