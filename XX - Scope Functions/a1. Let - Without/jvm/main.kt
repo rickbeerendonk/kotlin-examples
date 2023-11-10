@@ -14,7 +14,7 @@ class Demo(val name: String) {
 }
 
 fun main() {
-    // Without Scope Function:
+    // Without Scope:
     // - variable needed
     // - name repeated everywhere
     val demo = Demo("First");
