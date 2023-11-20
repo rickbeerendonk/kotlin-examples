@@ -3,5 +3,3 @@
 
 val array = arrayOf("A", 1, true)
 println(array.size)  // 3
-
-// 3
