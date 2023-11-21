@@ -15,7 +15,14 @@ fun main() {
     println(lifecycleStage.name)                    // BLOOMING
     println(lifecycleStage.ordinal)                 // 2
 
-    // Values
+    // Entries (v1.9)
+    println("\nAll entries:")
+    val enumEntries = TulipLifecycle.entries
+    for (v in enumEntries) {
+        println(v)                                  // PLANTED, GROWING, BLOOMING, WITHERING
+    }
+
+    // Values (Don't use as of v1.9, entries is more performant)
     println("\nAll values:")
     val enumValues = TulipLifecycle.values()
     for (v in enumValues) {
