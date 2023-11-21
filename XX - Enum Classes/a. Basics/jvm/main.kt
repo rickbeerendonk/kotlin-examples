@@ -1,6 +1,8 @@
 // European Union Public License version 1.2
 // Copyright © 2023 Rick Beerendonk
 
+package org.enumclasses.basics
+
 enum class TulipLifecycle {
     PLANTED, GROWING, BLOOMING, WITHERING
 }
