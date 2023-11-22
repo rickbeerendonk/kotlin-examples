@@ -26,8 +26,8 @@ fun main() {
     val one = MyNumber(1)
     val two = MyNumber(2)
 
-    println(one)                //  1
-    println(one.subtract(two))  // -1
-    println(one - two)          // -1
-    println(one - 3)            // -2
+    println(one)                // MyNumber: 1
+    println(one.subtract(two))  // MyNumber: -1
+    println(one - two)          // MyNumber: -1
+    println(one - 3)            // MyNumber: -2
 }
