@@ -16,6 +16,10 @@ Examples for [Kotlin](https://kotlinlang.org/).
 - In VSCode, open a script file in the root of the example folder (where app.kts is located)
 - Use the build command. As a result the script file will be build and executed
 
+### Playground
+
+- Copy the example code. Paste and execute in the Kotlin Playground: https://play.kotlinlang.org/
+
 ## Docs
 
 - https://kotlinlang.org/docs/home.html
