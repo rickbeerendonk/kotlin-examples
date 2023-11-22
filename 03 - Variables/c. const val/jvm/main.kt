@@ -3,6 +3,8 @@
 
 package org.variables.const
 
+// Compile time constant
+
 // Explicit type
 const val EXPLICIT: Int = 123
 
