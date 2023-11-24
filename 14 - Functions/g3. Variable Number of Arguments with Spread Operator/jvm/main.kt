@@ -16,4 +16,8 @@ fun main() {
     
     // * = Spread Operator (only on Array types)
     test(*arr)
+
+    // Alternative
+    test(a = arr)
+
 }

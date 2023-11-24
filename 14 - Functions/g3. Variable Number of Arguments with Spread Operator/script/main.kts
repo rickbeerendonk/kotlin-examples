@@ -13,3 +13,6 @@ val arr = arrayOf("a", "b", "c")
 
 // * = Spread Operator (only on Array types)
 test(*arr)
+
+// Alternative
+test(a = arr)
