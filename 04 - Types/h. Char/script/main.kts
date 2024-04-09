@@ -1,9 +1,10 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
-val char = 'a'
-println(char)                       // a
-println(char::class.qualifiedName)  // kotlin.Char
+val explicit: Char = 'a'
+val implicit = 'a'
+println(explicit::class.qualifiedName)  // kotlin.Char
+println(implicit::class.qualifiedName)  // kotlin.Char
 
 // Special
 println('\t')      // (tab)
