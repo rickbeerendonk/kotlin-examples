@@ -12,7 +12,6 @@ fun main() {
     println(str.subSequence(1, 3))     // ex
     println(str::class.qualifiedName)  // kotlin.String
 
-
     // Multi line
 
     val multi1 = """
@@ -28,19 +27,18 @@ fun main() {
     println(multi2)
 
     val multi3 = """
-        | one
-        | "two"
+        |one
+        |"two"
     """.trimMargin()
     println(multi3)
 
-
     // Get character
-    
+
     println(str[0])                       // T
     println(str[0]::class.qualifiedName)  // kotlin.Char
 
 
     // Special characters (single line)
-    
+
     println("first \"line\" \nsecond line")
 }

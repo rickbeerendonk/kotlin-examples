@@ -9,7 +9,6 @@ println(str.length)                // 4
 println(str.subSequence(1, 3))     // ex
 println(str::class.qualifiedName)  // kotlin.String
 
-
 // Multi line
 
 val multi1 = """
@@ -25,11 +24,10 @@ val multi2 = """
 println(multi2)
 
 val multi3 = """
-    | one
-    | "two"
+    |one
+    |"two"
 """.trimMargin()
 println(multi3)
-
 
 // Get character
 
