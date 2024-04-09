@@ -1,11 +1,10 @@
 // European Union Public License version 1.2
 // Copyright © 2022 Rick Beerendonk
 
+// Options
+
 println(true)
 println(false)
-
-println(true::class.simpleName)    // Boolean
-println(true::class.qualifiedName) // kotlin.Boolean
 
 // Explicit vs Implicit
 

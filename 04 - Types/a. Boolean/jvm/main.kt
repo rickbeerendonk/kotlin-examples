@@ -4,11 +4,10 @@
 package org.types.bool
 
 fun main() {
+    // Options
+
     println(true)
     println(false)
-
-    println(true::class.simpleName)    // Boolean
-    println(true::class.qualifiedName) // kotlin.Boolean
 
     // Explicit vs Implicit
 
