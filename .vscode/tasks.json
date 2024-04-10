@@ -10,8 +10,11 @@
         "reevaluateOnRerun": true
       },
       "type": "shell",
-      //"command": "${workspaceFolder}${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc",
+      //"command": "${workspaceFolder}${pathSeparator}utils${pathSeparator}kotlinc${pathSeparator}bin${pathSeparator}kotlinc \"${file}\"",
       "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\" \"${fileDirname}\"",
+      "linux": {
+        "command": "sh ${workspaceFolder}${pathSeparator}utils${pathSeparator}start.sh \"${file}\" \"${fileDirname}\""
+      },
       "windows": {
         "command": "\"${workspaceFolder}${pathSeparator}utils${pathSeparator}start.bat\" \\\"${file}\\\" \\\"${fileDirname}\\\""
       },
