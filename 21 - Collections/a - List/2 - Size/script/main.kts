@@ -2,6 +2,4 @@
 // Copyright © 2022 Rick Beerendonk
 
 val list = listOf("A", 1, true)
-println(list.size)
-
-// 3
+println(list.size)  // 3
