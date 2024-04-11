@@ -16,6 +16,12 @@ fun main() {
         Product("Grape",    20.0, 350)
     )
     
+    // Show the product with the highest stock
     println(products.maxByOrNull({ it.stock }))
+
+    // Show the stock of the product with the highest stock
     println(products.maxByOrNull({ it.stock })?.stock)
+
+    // Product(name=Grape, price=20.0, stock=350)
+    // 350
 }

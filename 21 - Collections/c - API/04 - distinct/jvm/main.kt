@@ -16,7 +16,8 @@ fun main() {
         Product("Grape",    20.0, 350)
     )
 
-    println(products.map({ "${it.name} (price = ${it.price}) (stock = ${it.stock})" }))
-
+    // Show only distinct prices
     println(products.map({ it.price }).distinct())
+
+    // [10.0, 5.0, 20.0, 40.0, 15.0, 30.0]
 }

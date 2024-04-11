@@ -16,5 +16,16 @@ fun main() {
         Product("Grape",    20.0, 350)
     )
     
+    // Show all products sorted by price
     println(products.sortedBy({ it.price }))
+
+    // [
+    //    Product(name=Banana, price=5.0, stock=200), 
+    //    Product(name=Apple, price=10.0, stock=100), 
+    //    Product(name=Eggplant, price=15.0, stock=150), 
+    //    Product(name=Carrot, price=20.0, stock=50), 
+    //    Product(name=Grape, price=20.0, stock=350), 
+    //    Product(name=Fig, price=30.0, stock=250), 
+    //    Product(name=Date, price=40.0, stock=300)
+    // ]
 }

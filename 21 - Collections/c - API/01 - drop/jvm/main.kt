@@ -15,6 +15,15 @@ fun main() {
         Product("Fig",      30.0, 250),
         Product("Grape",    20.0, 350)
     )
-        
+    
+    // Show all except first 2
     println(products.drop(2))
+
+    // [
+    //    Product(name=Carrot, price=20.0, stock=50), 
+    //    Product(name=Date, price=40.0, stock=300), 
+    //    Product(name=Eggplant, price=15.0, stock=150), 
+    //    Product(name=Fig, price=30.0, stock=250), 
+    //    Product(name=Grape, price=20.0, stock=350)
+    // ]
 }
