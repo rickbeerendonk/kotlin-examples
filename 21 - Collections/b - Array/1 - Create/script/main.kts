@@ -3,7 +3,7 @@
 
 val array = arrayOf("A", 1, true)
 
-array.forEach{ println(it) }
+array.forEach { println(it) }
 // A
 // 1
 // true

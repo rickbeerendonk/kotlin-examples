@@ -16,8 +16,8 @@ fun main() {
         Product("Grape",    20.0, 350)
     )
     
-    // Show all with a price higher than 10.0
-    println(products.filter({ it.price > 10.0 }))
+    // Show all with a price higher than 15.0
+    println(products.filter { it.price > 15.0 } )
 
     // [
     //    Product(name=Carrot, price=20.0, stock=50), 
