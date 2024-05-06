@@ -27,8 +27,8 @@ fun main() {
     println(multi2)
 
     val multi3 = """
-        |one
-        |"two"
+        |  one
+        |  "two"
     """.trimMargin()
     println(multi3)
 
