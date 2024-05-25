@@ -9,6 +9,8 @@ fun test(vararg a: String) {
 }
 
 val arr = arrayOf("a", "b", "c")
+
+// Must be an array, not a list, so convert it.
 //val arr = listOf("a", "b", "c").toTypedArray()
 
 // * = Spread Operator (only on Array types)
