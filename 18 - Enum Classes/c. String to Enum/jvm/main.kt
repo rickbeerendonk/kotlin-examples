@@ -14,7 +14,7 @@ enum class DutchIcon(val description: String) {
 
 fun main() {
     val text = "Stroopwafel"
-    val icon = DutchIcon.valueOf(text.toUpperCase())
+    val icon = DutchIcon.valueOf(text.uppercase())
     println(icon)               // STROOPWAFEL
     println(icon.description)   // A traditional Dutch waffle with a caramel filling
 }
