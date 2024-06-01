@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2023 Rick Beerendonk
 
-package org.operatoroverloading.plus
+package org.operatoroverloading.binaryplus
 
 class MyNumber(var value: Int) {
 

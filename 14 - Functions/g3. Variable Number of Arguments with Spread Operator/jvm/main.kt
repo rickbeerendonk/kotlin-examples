@@ -11,8 +11,8 @@ fun test(vararg a: String) {
 }
 
 fun main() {
-    val arr = arrayOf("a", "b", "c")
-    //val arr = listOf("a", "b", "c").toTypedArray()
+    //val arr = arrayOf("a", "b", "c")
+    val arr = listOf("a", "b", "c").toTypedArray()
     
     // * = Spread Operator (only on Array types)
     test(*arr)

@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2023 Rick Beerendonk
 
-package org.operatoroverloading.times
+package org.operatoroverloading.binarytimes
 
 class MyNumber(var value: Int) {
 

@@ -17,6 +17,7 @@ fun main() {
 bool: $bool
 number+1: ${number + 1}
 text: $text (length: ${text.length})
+dollar: $${"text"}
 slash: \
 double quotes: "
 """)
