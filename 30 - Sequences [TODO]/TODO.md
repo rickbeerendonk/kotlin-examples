@@ -1,3 +1,3 @@
 # Annotations
 
-See: https://kotlinlang.org/docs/annotations.html
+See: https://kotlinlang.org/docs/sequences.html
