@@ -22,8 +22,13 @@ fun main() {
     // [
     //    Apple (price = 10.0) (stock = 100), 
     //    Banana (price = 5.0) (stock = 200), 
-    //    Carrot (price = 20.0) (stock = 50), Date (price = 40.0) (stock = 300), Eggplant (price = 15.0) (stock = 150), Fig (price = 30.0) (stock = 250), Grape (price = 20.0) (stock = 350)]
-
+    //    Carrot (price = 20.0) (stock = 50), 
+    //    Date (price = 40.0) (stock = 300), 
+    //    Eggplant (price = 15.0) (stock = 150), 
+    //    Fig (price = 30.0) (stock = 250), 
+    //    Grape (price = 20.0) (stock = 350)
+    // ]
+    
     // Show only prices
     println(products.map { it.price } )
 
