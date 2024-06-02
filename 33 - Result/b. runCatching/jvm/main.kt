@@ -18,3 +18,6 @@ fun main() {
         .onSuccess { println("Result: $it") }
         .onFailure { println("Error: ${it.message}") }
 }
+
+// Result: 2
+// Error: / by zero
