@@ -1,14 +1,10 @@
 // European Union Public License version 1.2
 // Copyright © 2024 Rick Beerendonk
 
-package org.result.basics
+package org.result.runcatching
 
 fun divide(a: Int, b: Int): Result<Int> {
-    return if (b != 0) {
-        Result.success(a / b)
-    } else {
-        Result.failure(ArithmeticException("Division by zero"))
-    }
+    return runCatching { a / b }
 }
 
 fun main() {
