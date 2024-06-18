@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
 // Copyright © 2024 Rick Beerendonk
 
-package org.ranges.fromto
+package org.ranges.fromtoincluding
 
 fun main() {
     val range = 1..5
