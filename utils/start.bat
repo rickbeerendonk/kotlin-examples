@@ -1,5 +1,7 @@
 @echo off
 
+setlocal enabledelayedexpansion
+
 set SCRIPT_DIR=%~dp0
 set FILE=%1
 set FILE=%FILE:"=%
@@ -9,31 +11,38 @@ set FILE_DIR=%FILE_DIR:"=%
 rem Clear terminal
 cls
 
+rem Debug output
+echo SCRIPT_DIR: %SCRIPT_DIR%
+echo FILE: %FILE%
+echo FILE_DIR: %FILE_DIR%
+
 if "%FILE:~-4%" == ".kts" (
     rem Script
-    echo script
+    echo Running Kotlin script...
 
     rem Show compiler version
-    rem call "%SCRIPT_DIR%\kotlinc\bin\kotlinc" -version
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc.bat" -version
     echo.
 
-    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc.bat" "-script" "%FILE%"
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc.bat" -script "%FILE%"
 ) else if "%FILE:~-3%" == ".kt" (
     rem JVM
-    echo jvm
+    echo Compiling Kotlin JVM...
 
     rem Show compiler version
-    rem call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm" -version
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm.bat" -version
     echo.
 
-    set COMPILED_FILE="temp\app.jar"
+    set COMPILED_FILE=%SCRIPT_DIR%temp\app.jar
 
-    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm.bat" -cp "%SCRIPT_DIR%\lib\*" "%FILE_DIR%" "-include-runtime" "-d" "temp\app.jar"
-    if exist "temp\app.jar" (
+    call "%SCRIPT_DIR%\kotlinc\bin\kotlinc-jvm.bat" -cp "%SCRIPT_DIR%\lib\*" "%FILE" -include-runtime -d "%COMPILED_FILE%"
+    if exist "%COMPILED_FILE%" (
         cls
         rem Works for coroutine examples (without main in a package):
         rem java -cp "%SCRIPT_DIR%\lib\*";"%COMPILED_FILE%" MainKt 
-        java -jar "temp\app.jar"
-        del "temp\app.jar"
+        java -jar "%COMPILED_FILE%"
+        del "%COMPILED_FILE%"
     )
 )
+
+endlocal
