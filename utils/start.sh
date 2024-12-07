@@ -28,12 +28,13 @@ elif [[ $FILE == *.kt ]]; then
     echo
 
     COMPILED_FILE=temp/app.jar
-    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -cp $SCRIPT_DIR/lib/* "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
+    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -cp "$SCRIPT_DIR/lib/kotlinx-coroutines-core-jvm-1.9.0.jar" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
     if [[ -f "$COMPILED_FILE" ]]; then
-        clear
-        # Works for coroutine examples (without main in a package):
-        #java -cp $SCRIPT_DIR/lib/*:$COMPILED_FILE MainKt 
-        java -jar $COMPILED_FILE
-        rm $COMPILED_FILE
+        # Automatically detect the main class
+        MAIN_CLASS=$(jar tf "$COMPILED_FILE" | grep 'MainKt\.class$' | sed 's/\.class$//' | tr '/' '.')
+
+
+        java -cp "$SCRIPT_DIR/lib/*:$COMPILED_FILE" "$MAIN_CLASS"
+        rm "$COMPILED_FILE"
     fi
 fi
