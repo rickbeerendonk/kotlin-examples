@@ -4,6 +4,24 @@ Examples for [Kotlin](https://kotlinlang.org/).
 
 ![](https://img.shields.io/github/license/rickbeerendonk/kotlin-examples.svg)
 
+## Install
+
+### IntelliJ
+
+See: https://www.jetbrains.com/idea/
+
+### Visual Studio Code
+
+Editor: https://code.visualstudio.com/
+Plugin: https://marketplace.visualstudio.com/items?itemName=fwcd.kotlin
+
+#### Jupiter Kotlin Notebook
+
+```zsh
+brew install python@3
+brew install kotlin-language-server
+```
+
 ## Run
 
 ### IntelliJ
