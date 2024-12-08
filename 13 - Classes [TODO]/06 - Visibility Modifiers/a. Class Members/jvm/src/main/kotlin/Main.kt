@@ -17,4 +17,5 @@ class D {
 }
 
 fun main() {
+    println("Done")
 }
