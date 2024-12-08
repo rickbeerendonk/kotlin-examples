@@ -9,3 +9,7 @@ repositories {
 kotlin {
     jvmToolchain(21)
 }
+
+dependencies {
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.9.0")
+}
