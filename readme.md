@@ -6,9 +6,11 @@ Examples for [Kotlin](https://kotlinlang.org/).
 
 ## Run
 
-### Command Line
+### IntelliJ
 
-...
+- Open the Kotlin examples by choosing "Open... (Project)" and select the jvm folder of the example.
+- Open the Main.kt file in the editor (located in "\src\main\kotlin")
+- Run the main function
 
 ### Visual Studio Code
 
