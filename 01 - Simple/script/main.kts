@@ -3,5 +3,5 @@
 
 println("Hello Kotlin!")
 
-println("What is your name? ")
+println("What is your name?")
 readLine(); // Returns a String? (nullable string)
