@@ -11,3 +11,12 @@
 !utils/lib/**
 utils/.DS_Store
 utils/lib/.DS_Store
+
+# Prevent all unnecessary IntelliJ files
+**/.gradle
+**/.idea
+**/.kotlin
+**/build
+**/gradle
+gradlew
+gradlew.bat
