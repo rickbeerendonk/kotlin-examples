@@ -1,5 +1,5 @@
 // European Union Public License version 1.2
-// Copyright © 2023 Rick Beerendonk
+// Copyright © 2024 Rick Beerendonk
 
 class Demo(val name: String) {
     private val list = mutableListOf<Demo>()
@@ -12,14 +12,12 @@ class Demo(val name: String) {
 }
 
 // - No variable needed
-// - Extension method
-// - this refers to scope object
-// - return = context (Demo)
-val result = Demo("First").apply {
-    add(Demo("one"))
-    add(Demo("two"))
-    println(this)  // First contains 2 demos.
+// - No extension method
+// - it refers to scope object
+// - return = lambda return
+val result = Demo("First").also {
+    println("Side effect form \"$it\"")
     // return value NOT needed
 }
 
-println(result)  // First contains 2 demos.
+println(result)  // First contains 0 demos.

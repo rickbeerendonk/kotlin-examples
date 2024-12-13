@@ -17,7 +17,7 @@ fun main() {
     // With:
     // - No variable needed
     // - Extension method
-    // - this refers to object
+    // - this refers to scope object
     // - return = lambda return
     val result = Demo("First").run {
         add(Demo("one"))

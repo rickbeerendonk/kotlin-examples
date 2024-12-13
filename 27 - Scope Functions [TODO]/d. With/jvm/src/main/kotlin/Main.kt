@@ -16,7 +16,7 @@ class Demo(val name: String) {
 fun main() {
     // - No variable needed
     // - No extension method
-    // - this refers to object
+    // - this refers to scope object
     // - return = lambda return
     val result = with(Demo("First")) {
         add(Demo("one"))

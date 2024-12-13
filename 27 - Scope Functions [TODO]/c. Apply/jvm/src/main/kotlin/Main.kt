@@ -16,7 +16,7 @@ class Demo(val name: String) {
 fun main() {
     // - No variable needed
     // - Extension method
-    // - this refers to object
+    // - this refers to scope object
     // - return = context (Demo)
     val result = Demo("First").apply {
         add(Demo("one"))

@@ -14,7 +14,7 @@ class Demo(val name: String) {
 // let():
 // - No variable needed
 // - Extension method
-// - it refers to object
+// - it refers to scope object
 // - return = lambda return
 val result = Demo("First").let {
     it.add(Demo("one"))

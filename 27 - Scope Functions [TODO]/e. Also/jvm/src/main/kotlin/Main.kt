@@ -1,7 +1,7 @@
 // European Union Public License version 1.2
-// Copyright © 2023 Rick Beerendonk
+// Copyright © 2024 Rick Beerendonk
 
-package org.scopefunctions.let.with
+package org.scopefunctions.with
 
 class Demo(val name: String) {
     private val list = mutableListOf<Demo>()
@@ -14,17 +14,14 @@ class Demo(val name: String) {
 }
 
 fun main() {
-    // let():
     // - No variable needed
-    // - Extension method
+    // - No extension method
     // - it refers to scope object
     // - return = lambda return
-    val result = Demo("First").let {
-        it.add(Demo("one"))
-        it.add(Demo("two"))
-        println(it)  // First contains 2 demos.
-        it // return value
+    val result = Demo("First").also {
+        println("Side effect form \"$it\"")
+        // return value NOT needed
     }
 
-    println(result)  // First contains 2 demos.
+    println(result)  // First contains 0 demos.
 }
