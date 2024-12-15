@@ -4,11 +4,12 @@
 package org.coroutines.simple
 
 import kotlinx.coroutines.*
+import com.coroutines.print.*
 
 fun main() = runBlocking {
     launch {
         delay(1000L)
-        println("From coroutine")
+        coroutinePrintln("From coroutine")
     }
-    println("End")
+    coroutinePrintln("End")
 }

@@ -9,8 +9,18 @@ blue="\033[0;34m"
 bold=$(tput bold)
 normal=$(tput sgr0)
 
+# Debugging: Controleer scriptdirectory en library path
+echo "Script directory: $SCRIPT_DIR"
+echo "Library path: $SCRIPT_DIR/lib"
+
 # Clear terminal
 clear
+
+# Static classpath
+# LIB_CP="$SCRIPT_DIR/lib/kotlinx-coroutines-core-jvm-1.9.0.jar:$SCRIPT_DIR/lib/kotlinx-datetime-jvm-0.6.1.jar"
+
+# Dynamic classpath
+LIB_CP=$(find "$SCRIPT_DIR/lib" -name '*.jar' | tr '\n' ':')
 
 if [[ $FILE == *.kts ]]; then
     # Script
@@ -28,13 +38,18 @@ elif [[ $FILE == *.kt ]]; then
     echo
 
     COMPILED_FILE=temp/app.jar
-    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" -cp "$SCRIPT_DIR/lib/kotlinx-coroutines-core-jvm-1.9.0.jar" "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
+
+    # Compile using classpath
+    sh "$SCRIPT_DIR/kotlinc/bin/kotlinc-jvm" \
+        -cp "$LIB_CP" \
+        "$FILE_DIR" "-include-runtime" "-d" "$COMPILED_FILE"
+    
     if [[ -f "$COMPILED_FILE" ]]; then
         # Automatically detect the main class
         MAIN_CLASS=$(jar tf "$COMPILED_FILE" | grep 'MainKt\.class$' | sed 's/\.class$//' | tr '/' '.')
 
-
-        java -cp "$SCRIPT_DIR/lib/*:$COMPILED_FILE" "$MAIN_CLASS"
+        # Run the compiled app
+        java -cp "$LIB_CP:$COMPILED_FILE" "$MAIN_CLASS"
         rm "$COMPILED_FILE"
     fi
 fi
